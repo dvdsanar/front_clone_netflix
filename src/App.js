@@ -6,8 +6,8 @@ import Header from "./componentes/Header/Header.js";
 function App() {
   return (
     <div className="App">
-      <Header />
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
         </Routes>
