@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./componentes/Home/Home.js";
 import Header from "./componentes/Header/Header.js";
 import Footer from "./componentes/Footer/Footer.js";
-import { Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Registro from "./contenedores/Registro/Registro";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/registro" element={<Registro />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
