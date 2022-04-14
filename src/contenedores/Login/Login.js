@@ -27,7 +27,7 @@ const Login = () => {
       loginUser = await loginUser.json();
 
       if (loginUser) {
-        localStorage.setItem("token", loginUser.token);
+        localStorage.setItem("token", loginUser.ficha);
         localStorage.setItem("id", loginUser.id);
         localStorage.setItem("rol", loginUser.rol);
         if (localStorage.getItem("rol") === "admin") {
