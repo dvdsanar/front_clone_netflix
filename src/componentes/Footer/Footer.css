@@ -1,0 +1,23 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 5em;
+  font-family: "Courier New", Courier, monospace;
+  background-color: black;
+  border-top: 2px solid white;
+}
+.enlacesFooter {
+  font-size: 25px;
+  padding: 10px;
+  margin: 10px 20px;
+}
+.enlacesFooter:hover {
+  background-color: black;
+  border: 2px solid white;
+  box-shadow: 0px 0px 10px 5px white;
+}
+.enlacesFooter a {
+  text-decoration: none;
+  color: white;
+}
