@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./componentes/Home/Home.js";
 import Header from "./componentes/Header/Header.js";
 import Footer from "./componentes/Footer/Footer.js";
+import { Button } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
