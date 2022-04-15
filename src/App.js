@@ -6,6 +6,7 @@ import Footer from "./componentes/Footer/Footer.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Registro from "./contenedores/Registro/Registro";
 import Login from "./contenedores/Login/Login";
+import PopUp from "./contenedores/PopUp/PopUp";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/registro" element={<Registro />}></Route>
           <Route path="/login" element={<Login />}></Route>
         </Routes>
+        <PopUp />
         <Footer />
       </BrowserRouter>
     </div>
