@@ -39,7 +39,7 @@ const AlquileresAdmin = () => {
         }
       );
       getAlquileres();
-      dispatch(actionCreator(VER_POPUP, "Has cancelado la cita"));
+      dispatch(actionCreator(VER_POPUP, "Has cancelado el alquiler"));
       setTimeout(() => dispatch(actionCreator(CERRAR_POPUP)), 3000);
     } catch (error) {
       alert("no se ha cargado la bd " + error);
