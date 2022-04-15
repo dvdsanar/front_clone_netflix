@@ -35,7 +35,7 @@ const InfoUsuario = () => {
               <button
                 type="button"
                 className="botonOpcionesUsuario"
-                onClick={() => navegar("/modificarUsuario/" + usuario.id)}
+                onClick={() => navegar("/modificarUsuario/" + usuario._id)}
               >
                 Modificar datos
               </button>
