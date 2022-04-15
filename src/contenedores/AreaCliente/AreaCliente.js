@@ -10,7 +10,7 @@ const AreaCliente = () => {
       <div>
         <InfoUsuario />
       </div>
-      <h3>Tus Mascotas</h3>
+      <h3>Películas Alquiladas</h3>
       <UsuarioAlquileres />
     </div>
   );

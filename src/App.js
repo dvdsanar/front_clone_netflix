@@ -9,6 +9,7 @@ import Login from "./contenedores/Login/Login";
 import PopUp from "./contenedores/PopUp/PopUp";
 import AreaCliente from "./contenedores/AreaCliente/AreaCliente";
 import ModificarAlquiler from "./contenedores/ModificarAlquiler/ModificarAlquiler";
+import AlquilarPelicula from "./contenedores/AlquilarPelicula/AlquilarPelicula";
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
           <Route
             path="/modificarAlquiler/:id"
             element={<ModificarAlquiler />}
+          ></Route>
+          <Route
+            path="/alquilarPelicula"
+            element={<AlquilarPelicula />}
           ></Route>
         </Routes>
         <PopUp />

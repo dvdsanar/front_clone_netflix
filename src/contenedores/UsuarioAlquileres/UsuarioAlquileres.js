@@ -77,7 +77,7 @@ const UsuarioAlquileres = () => {
               <td>{Alquiler.idPelicula.genero}</td>
               <th>Actores</th>
               <td>{Alquiler.idPelicula.actores}</td>
-              <th>Actores</th>
+              <th>Duración</th>
               <td>{Alquiler.idPelicula.duracion}</td>
             </tr>
             <div className="botonesOpciones">
