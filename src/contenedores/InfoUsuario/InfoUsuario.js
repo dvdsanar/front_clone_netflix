@@ -39,19 +39,13 @@ const InfoUsuario = () => {
               >
                 Modificar datos
               </button>
+
               <button
                 type="button"
                 className="botonOpcionesUsuario"
-                onClick={() => navegar("/registroMascota")}
+                onClick={() => navegar("/alquilarPelicula")}
               >
-                Añadir una mascota
-              </button>
-              <button
-                type="button"
-                className="botonOpcionesUsuario"
-                onClick={() => navegar("/crearCita")}
-              >
-                Pedir cita
+                Alquilar una película
               </button>
             </div>
           </div>
