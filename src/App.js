@@ -8,6 +8,7 @@ import Registro from "./contenedores/Registro/Registro";
 import Login from "./contenedores/Login/Login";
 import PopUp from "./contenedores/PopUp/PopUp";
 import AreaCliente from "./contenedores/AreaCliente/AreaCliente";
+import ModificarAlquiler from "./contenedores/ModificarAlquiler/ModificarAlquiler";
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
           <Route path="/registro" element={<Registro />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/areaCliente" element={<AreaCliente />}></Route>
+          <Route
+            path="/modificarAlquiler/:id"
+            element={<ModificarAlquiler />}
+          ></Route>
         </Routes>
         <PopUp />
         <Footer />
