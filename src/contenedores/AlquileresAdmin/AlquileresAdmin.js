@@ -65,7 +65,7 @@ const AlquileresAdmin = () => {
               <button
                 type="button"
                 className="botonalquileresAll"
-                onClick={() => navegar("/modificarCita/" + alquiler.id)}
+                onClick={() => navegar("/modificarAlquiler/" + alquiler._id)}
               >
                 Modificar Alquiler
               </button>
