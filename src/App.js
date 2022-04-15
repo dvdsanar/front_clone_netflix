@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Registro from "./contenedores/Registro/Registro";
 import Login from "./contenedores/Login/Login";
 import PopUp from "./contenedores/PopUp/PopUp";
+import AreaCliente from "./contenedores/AreaCliente/AreaCliente";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/registro" element={<Registro />}></Route>
           <Route path="/login" element={<Login />}></Route>
+          <Route path="/areaCliente" element={<AreaCliente />}></Route>
         </Routes>
         <PopUp />
         <Footer />
