@@ -84,7 +84,7 @@ const UsuarioAlquileres = () => {
               <button
                 type="button"
                 className="botonOpcionesalquileres"
-                onClick={() => navegar("/modificarAlquiler/" + Alquiler.id)}
+                onClick={() => navegar("/modificarAlquiler/" + Alquiler._id)}
               >
                 Modificar datos de Alquiler
               </button>
@@ -92,9 +92,9 @@ const UsuarioAlquileres = () => {
               <button
                 type="button"
                 className="botonOpcionesalquileres"
-                onClick={() => borrarAlquiler(Alquiler.id)}
+                onClick={() => borrarAlquiler(Alquiler._id)}
               >
-                Eliminar Alquiler
+                Cancelar Alquiler
               </button>
             </div>
           </div>
