@@ -31,7 +31,12 @@ const Login = () => {
         localStorage.setItem("id", loginUser.id);
         localStorage.setItem("rol", loginUser.rol);
         if (localStorage.getItem("rol") === "admin") {
-          navegar("/citascompleto");
+          dispatch(actionCreator(USER_LOGGED));
+          dispatch(
+            actionCreator(VER_POPUP, "Te has logeado correctamente. Bienvenido")
+          );
+          setTimeout(() => dispatch(actionCreator(CERRAR_POPUP)), 3000);
+          navegar("/alquileresadmin");
         } else {
           dispatch(actionCreator(USER_LOGGED));
           dispatch(

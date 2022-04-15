@@ -11,6 +11,7 @@ import AreaCliente from "./contenedores/AreaCliente/AreaCliente";
 import ModificarAlquiler from "./contenedores/ModificarAlquiler/ModificarAlquiler";
 import AlquilarPelicula from "./contenedores/AlquilarPelicula/AlquilarPelicula";
 import ModificarUsuario from "./contenedores/ModificarUsuario/ModificarUsuario";
+import AlquileresAdmin from "./contenedores/AlquileresAdmin/AlquileresAdmin";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             path="/modificarUsuario/:id"
             element={<ModificarUsuario />}
           ></Route>
+          <Route path="/alquileresadmin" element={<AlquileresAdmin />}></Route>
         </Routes>
         <PopUp />
         <Footer />
