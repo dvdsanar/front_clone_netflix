@@ -1,5 +1,5 @@
 .fondo {
-  background: linear-gradient(to bottom, blue, white);
+  background: linear-gradient(to bottom, rgb(217, 2, 250), blue);
   width: 100vw;
   margin: 0;
 }
