@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const AreaCliente = () => {
   return (
-    <div>
+    <div className="contenedor">
       <h2>Área de Cliente</h2>
       <h3>Información personal</h3>
       <div class="">

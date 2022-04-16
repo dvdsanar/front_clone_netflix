@@ -40,43 +40,51 @@ const Registro = () => {
   };
 
   return (
-    <div className="crearUsuario">
-      <h2 className="h2registro">REGISTRO DE USUARIO</h2>
-      <form onSubmit={(e) => formSubmit(e)} className="formCrearUsuario">
-        <label className="labelCrearUsuario" htmlFor="nombre">
-          Nombre
-        </label>
-        <input
-          className="inputCrearUsuario"
-          type="text"
-          id="nombre"
-          name="nombre"
-        />
-        <label className="labelCrearUsuario" htmlFor="email">
-          Email
-        </label>
-        <input
-          className="inputCrearUsuario"
-          type="email"
-          id="email"
-          name="email"
-          placeholder="ejemplo@dominio.com"
-        />
-        <label className="labelCrearUsuario" htmlFor="contraseña">
-          Contraseña
-        </label>
-        <input
-          className="inputCrearUsuario"
-          type="password"
-          id="contraseña"
-          name="contraseña"
-        />
-        <input
-          className="botonCrearUsuario"
-          type="submit"
-          value="Registrarse"
-        />
-      </form>
+    <div
+      class="d-flex align-items-center justify-content-center"
+      className="contenedor"
+    >
+      <div class="col-lg-12">
+        <h2 class="mb-5">REGISTRO DE USUARIO</h2>
+        <form onSubmit={(e) => formSubmit(e)} className="formCrearUsuario">
+          <div class="row justify-content-center mt-2">
+            <label class="col-lg-2 text-start" htmlFor="nombre">
+              Nombre:
+            </label>
+            <input class="col-lg-2" type="text" id="nombre" name="nombre" />
+          </div>
+          <div class="row justify-content-center mt-2">
+            <label class="col-lg-2 text-start" htmlFor="email">
+              Email:
+            </label>
+            <input
+              class="col-lg-2"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="ejemplo@dominio.com"
+            />
+          </div>
+          <div class="row justify-content-center mt-2">
+            <label class="col-lg-2 text-start" htmlFor="contraseña">
+              Contraseña:
+            </label>
+            <input
+              class="col-lg-2"
+              type="password"
+              id="contraseña"
+              name="contraseña"
+            />
+          </div>
+          <div class="row justify-content-center mt-4 mb-1">
+            <input
+              class="col-lg-1 btn btn-dark"
+              type="submit"
+              value="Registrarse"
+            />
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

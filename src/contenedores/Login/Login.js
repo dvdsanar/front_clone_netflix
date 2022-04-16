@@ -55,10 +55,10 @@ const Login = () => {
 
   return (
     <div
-      class="container d-flex align-items-center justify-content-center"
-      className="container"
+      class="d-flex align-items-center justify-content-center"
+      className="contenedor"
     >
-      <div class="col-lg-8">
+      <div class="col-lg-12">
         <h2 class="mb-5">LOGIN DE USUARIO</h2>
         <form onSubmit={(e) => formSubmit(e)} className="formUsuario">
           <div class="row justify-content-center mt-2">

@@ -59,18 +59,18 @@ const ModificarUsuario = () => {
   };
   return (
     <div
-      class="container d-flex align-items-center justify-content-center "
-      className="container"
+      class="d-flex align-items-center justify-content-center "
+      className="contenedor"
     >
-      <div class="col-lg-8">
+      <div class="col-lg-12">
         <h1 class="row justify-content-center mb-5">Modifica tus datos</h1>
         <form onSubmit={(e) => formSubmit(e)} class="align-middle">
           <div class="row justify-content-center mt-2">
-            <label htmlFor="nombre" class="col-lg-4">
+            <label htmlFor="nombre" class="col-lg-2 text-start">
               Modifica tu nombre:
             </label>
             <input
-              class="col-lg-4"
+              class="col-lg-2"
               type="text"
               id="nombre"
               name="nombre"
@@ -78,11 +78,11 @@ const ModificarUsuario = () => {
             />
           </div>
           <div class="row justify-content-center mt-2">
-            <label htmlFor="email" class="col-lg-4">
+            <label htmlFor="email" class="col-lg-2 text-start">
               Modifica tu correo electronico:
             </label>
             <input
-              class="col-lg-4"
+              class="col-lg-2"
               type="email"
               id="email"
               name="email"
@@ -90,11 +90,11 @@ const ModificarUsuario = () => {
             />
           </div>
           <div class="row justify-content-center mt-2">
-            <label htmlFor="password" class="col-lg-4">
+            <label htmlFor="password" class="col-lg-2 text-start">
               Modifica tu contraseña:
             </label>
             <input
-              class="col-lg-4"
+              class="col-lg-2"
               type="password"
               id="password"
               name="password"
