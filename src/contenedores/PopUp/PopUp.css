@@ -1,0 +1,16 @@
+.popup {
+  background-color: blue;
+  opacity: 0.8;
+  width: 12em;
+  height: 10em;
+  position: absolute;
+  top: 13vh;
+  left: 4vh;
+  border-radius: 10px;
+  border: 1px solid white;
+  box-shadow: 0px 0px 10px 10px white;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.2em;
+  color: yellow;
+}
