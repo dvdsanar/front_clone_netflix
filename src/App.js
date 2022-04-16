@@ -19,6 +19,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
+        <PopUp />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/registro" element={<Registro />}></Route>
@@ -39,7 +40,6 @@ function App() {
           <Route path="/alquileresadmin" element={<AlquileresAdmin />}></Route>
           <Route path="/listapeliculas" element={<ListaPeliculas />}></Route>
         </Routes>
-        <PopUp />
         <Footer />
       </BrowserRouter>
     </div>

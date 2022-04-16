@@ -68,11 +68,11 @@ const AlquilarPelicula = () => {
         <h2 class="mb-5">Alquilar Película</h2>
         <form onSubmit={(e) => formSubmit(e)} className="formCrearCita">
           <div class="row justify-content-center mt-2">
-            <label class="col-lg-2 text-start" htmlFor="fecha_alquiler">
+            <label class="col-lg-3 text-start" htmlFor="fecha_alquiler">
               Fecha desde la que deseas alquilar la película
             </label>
             <input
-              class="col-lg-2"
+              class="col-lg-3"
               type="datetime"
               id="fecha_alquiler"
               name="fecha_alquiler"
@@ -80,11 +80,11 @@ const AlquilarPelicula = () => {
             />
           </div>
           <div class="row justify-content-center mt-2">
-            <label class="col-lg-2 text-start" htmlFor="fecha_devolucion">
+            <label class="col-lg-3 text-start" htmlFor="fecha_devolucion">
               Fecha en la que deseas devolver la película
             </label>
             <input
-              class="col-lg-2"
+              class="col-lg-3"
               type="datetime"
               id="fecha_devolucion"
               name="fecha_devolucion"
@@ -92,10 +92,10 @@ const AlquilarPelicula = () => {
             />
           </div>
           <div class="row justify-content-center mt-2">
-            <label class="col-lg-2 text-start" htmlFor="seleccionar">
+            <label class="col-lg-3 text-start" htmlFor="seleccionar">
               Selecciona la Película que deseas alquilar
             </label>
-            <select class="col-lg-2">
+            <select class="col-lg-3">
               {peliculas.map((pelicula) => (
                 <option value={pelicula._id}>{pelicula.titulo}</option>
               ))}

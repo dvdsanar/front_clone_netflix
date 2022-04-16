@@ -49,7 +49,7 @@ const ModificarUsuario = () => {
         }
       );
       if (patchUsuario) {
-        dispatch(actionCreator(VER_POPUP, "Has modificado a tus datos"));
+        dispatch(actionCreator(VER_POPUP, "Has modificado tus datos"));
         setTimeout(() => dispatch(actionCreator(CERRAR_POPUP)), 3000);
         setTimeout(() => navegar("/areaCliente"), 4000);
       }

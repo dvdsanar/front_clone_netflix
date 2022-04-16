@@ -71,11 +71,11 @@ const ModificarAlquiler = () => {
         <h1 class="mb-5">Modifica los datos de tu alquiler</h1>
         <form onSubmit={(e) => formSubmit(e)} className="formModificaralquiler">
           <div class="row justify-content-center mt-2">
-            <label class="col-lg-2 text-start" htmlFor="fecha_alquiler">
+            <label class="col-lg-3 text-start" htmlFor="fecha_alquiler">
               Introduzca la fecha de inicio del alquiler
             </label>
             <input
-              class="col-lg-2 text-center"
+              class="col-lg-3 text-center"
               type="text"
               id="fecha_alquiler"
               name="fecha_alquiler"
@@ -83,11 +83,11 @@ const ModificarAlquiler = () => {
             />
           </div>
           <div class="row justify-content-center mt-2">
-            <label class="col-lg-2 text-start" htmlFor="fecha_devolucion">
+            <label class="col-lg-3 text-start" htmlFor="fecha_devolucion">
               Introduzca la fecha de devolucion del alquiler
             </label>
             <input
-              class="col-lg-2 text-center"
+              class="col-lg-3 text-center"
               type="text"
               id="fecha_devolucion"
               name="fecha_devolucion"
