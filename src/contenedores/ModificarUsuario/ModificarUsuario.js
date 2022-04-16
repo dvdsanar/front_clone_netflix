@@ -58,49 +58,54 @@ const ModificarUsuario = () => {
     }
   };
   return (
-    <div class="container " className="container">
-      <h1 class="row justify-content-center mt-2">Modifica tus datos</h1>
-      <form onSubmit={(e) => formSubmit(e)} class="align-middle">
-        <div class="row justify-content-center mt-2">
-          <label htmlFor="nombre" class="col-lg-3">
-            Modifica tu nombre:
-          </label>
-          <input
-            class="col-lg-3"
-            type="text"
-            id="nombre"
-            name="nombre"
-            defaultValue={usuarios.nombre}
-          />
-        </div>
-        <div class="row justify-content-center mt-2">
-          <label htmlFor="email" class="col-lg-3">
-            Modifica tu correo electronico:
-          </label>
-          <input
-            class="col-lg-3"
-            type="email"
-            id="email"
-            name="email"
-            defaultValue={usuarios.email}
-          />
-        </div>
-        <div class="row justify-content-center mt-2">
-          <label htmlFor="password" class="col-lg-3">
-            Modifica tu contraseña:
-          </label>
-          <input
-            class="col-lg-3"
-            type="password"
-            id="password"
-            name="password"
-            defaultValue={usuarios.password}
-          />
-        </div>
-        <div class="row justify-content-center mt-2 mb-1">
-          <input type="submit" value="SEND" class="col-lg-3 btn btn-dark" />
-        </div>
-      </form>
+    <div
+      class="container d-flex align-items-center justify-content-center "
+      className="container"
+    >
+      <div class="col-lg-8">
+        <h1 class="row justify-content-center mb-5">Modifica tus datos</h1>
+        <form onSubmit={(e) => formSubmit(e)} class="align-middle">
+          <div class="row justify-content-center mt-2">
+            <label htmlFor="nombre" class="col-lg-4">
+              Modifica tu nombre:
+            </label>
+            <input
+              class="col-lg-4"
+              type="text"
+              id="nombre"
+              name="nombre"
+              defaultValue={usuarios.nombre}
+            />
+          </div>
+          <div class="row justify-content-center mt-2">
+            <label htmlFor="email" class="col-lg-4">
+              Modifica tu correo electronico:
+            </label>
+            <input
+              class="col-lg-4"
+              type="email"
+              id="email"
+              name="email"
+              defaultValue={usuarios.email}
+            />
+          </div>
+          <div class="row justify-content-center mt-2">
+            <label htmlFor="password" class="col-lg-4">
+              Modifica tu contraseña:
+            </label>
+            <input
+              class="col-lg-4"
+              type="password"
+              id="password"
+              name="password"
+              defaultValue={usuarios.password}
+            />
+          </div>
+          <div class="row justify-content-center mt-4 mb-1">
+            <input type="submit" value="SEND" class="col-lg-3 btn btn-dark" />
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
