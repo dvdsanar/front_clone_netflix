@@ -62,24 +62,24 @@ const Login = () => {
         <h2 class="mb-5">LOGIN DE USUARIO</h2>
         <form onSubmit={(e) => formSubmit(e)} className="formUsuario">
           <div class="row justify-content-center mt-2">
-            <label className="labelUsuario" htmlFor="email">
-              Email
+            <label class="col-lg-1 text-start" htmlFor="email">
+              Email:
             </label>
-            <input class="col-lg-3" type="email" id="email" name="email" />
+            <input class="col-lg-1" type="email" id="email" name="email" />
           </div>
           <div class="row justify-content-center mt-2">
-            <label className="labelUsuario" htmlFor="contraseña">
-              Contraseña
+            <label class="col-lg-1 text-start" htmlFor="contraseña">
+              Contraseña:
             </label>
             <input
-              class="col-lg-3"
+              class="col-lg-1"
               type="password"
               id="contraseña"
               name="contraseña"
             />
           </div>
           <div class="row justify-content-center mt-4 mb-1">
-            <input type="submit" value="Entrar" class="col-lg-3 btn btn-dark" />
+            <input type="submit" value="Entrar" class="col-lg-1 btn btn-dark" />
           </div>
         </form>
       </div>
