@@ -5,7 +5,7 @@ header {
   height: 5em;
   font-family: "Courier New", Courier, monospace;
   border-bottom: 2px solid white;
-  background-color: black;
+  background: linear-gradient(to bottom, blue, rgb(217, 2, 250));
   align-items: center;
 }
 .enlaces {
