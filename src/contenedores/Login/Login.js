@@ -54,24 +54,35 @@ const Login = () => {
   };
 
   return (
-    <div className="loginUsuario">
-      <h2 className="h2login">LOGIN DE USUARIO</h2>
-      <form onSubmit={(e) => formSubmit(e)} className="formUsuario">
-        <label className="labelUsuario" htmlFor="email">
-          Email
-        </label>
-        <input className="inputUsuario" type="email" id="email" name="email" />
-        <label className="labelUsuario" htmlFor="contraseña">
-          Contraseña
-        </label>
-        <input
-          className="inputUsuario"
-          type="password"
-          id="contraseña"
-          name="contraseña"
-        />
-        <input type="submit" value="Entrar" className="botonUsuario" />
-      </form>
+    <div
+      class="container d-flex align-items-center justify-content-center"
+      className="container"
+    >
+      <div class="col-lg-8">
+        <h2 class="mb-5">LOGIN DE USUARIO</h2>
+        <form onSubmit={(e) => formSubmit(e)} className="formUsuario">
+          <div class="row justify-content-center mt-2">
+            <label className="labelUsuario" htmlFor="email">
+              Email
+            </label>
+            <input class="col-lg-3" type="email" id="email" name="email" />
+          </div>
+          <div class="row justify-content-center mt-2">
+            <label className="labelUsuario" htmlFor="contraseña">
+              Contraseña
+            </label>
+            <input
+              class="col-lg-3"
+              type="password"
+              id="contraseña"
+              name="contraseña"
+            />
+          </div>
+          <div class="row justify-content-center mt-4 mb-1">
+            <input type="submit" value="Entrar" class="col-lg-3 btn btn-dark" />
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
