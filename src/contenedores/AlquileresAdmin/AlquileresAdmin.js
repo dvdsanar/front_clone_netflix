@@ -46,32 +46,40 @@ const AlquileresAdmin = () => {
     }
   };
   return (
-    <div className="alquileresCardAll">
+    <div class="row p-1 mt-1 ">
+      <h3>Datos de los alquileres</h3>
       {alquileres.map((alquiler) => {
         return (
-          <div className="infoalquileresAll">
-            <h3>Datos de los alquileres</h3>
-            <tr>
-              <th>Película</th>
-              <td>{alquiler.idPelicula.titulo}</td>
-              <th>Fecha de alquiler</th>
-              <td>{alquiler.fecha_alquiler}</td>
-              <th>Fecha de devolución</th>
-              <td>{alquiler.fecha_devolucion}</td>
-              <th>Usuario</th>
-              <td>{alquiler.idUsuario.nombre}</td>
-            </tr>
-            <div className="botonesOpcionesalquileresAll">
+          <div class="col-sm-4 border p-1 mt-1">
+            <h4>{alquiler.idPelicula.titulo}</h4>
+            <div class="row">
+              <span class="col-sm fw-bold">Película</span>
+              <span class="col-sm">{alquiler.idPelicula.titulo}</span>
+            </div>
+            <div class="row">
+              <span class="col-sm fw-bold">Fecha de alquiler</span>
+              <span class="col-sm">{alquiler.fecha_alquiler}</span>
+            </div>
+            <div class="row">
+              <span class="col-sm fw-bold">Fecha de devolución</span>
+              <span class="col-sm">{alquiler.fecha_devolucion}</span>
+            </div>
+            <div class="row">
+              <span class="col-sm fw-bold">Usuario</span>
+              <span class="col-sm">{alquiler.idUsuario.nombre}</span>
+            </div>
+
+            <div class="row d-flex justify-content-center">
               <button
                 type="button"
-                className="botonalquileresAll"
+                class="btn btn-secondary btn-sm col-sm-4 text-center me-1"
                 onClick={() => navegar("/modificarAlquiler/" + alquiler._id)}
               >
                 Modificar Alquiler
               </button>
               <button
                 type="button"
-                className="botonalquileresAll"
+                class="btn btn-secondary btn-sm col-sm-4 text-center me-1"
                 onClick={() => cancelarAlquiler(alquiler._id)}
               >
                 Cancelar Alquiler
