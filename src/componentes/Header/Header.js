@@ -24,7 +24,7 @@ const Header = () => {
         <div class="row">
           <div class="col-md">
             <a
-              class="btn btn-dark"
+              class="btn btn-dark rounded-pill"
               onClick={() => {
                 dispatch(actionCreator(USER_LOGOUT));
                 navegar("/login");
@@ -34,17 +34,17 @@ const Header = () => {
             </a>
           </div>
           <div class="col-md">
-            <Link class="btn btn-dark" to="/listapeliculas">
+            <Link class="btn btn-dark rounded-pill" to="/listapeliculas">
               Películas
             </Link>
           </div>
           <div class="col-md">
-            <Link class="btn btn-dark" to="/areaCliente">
+            <Link class="btn btn-dark rounded-pill" to="/areaCliente">
               Perfil
             </Link>
           </div>
           <div class="col-md">
-            <Link class="btn btn-dark" to="/">
+            <Link class="btn btn-dark rounded-pill" to="/">
               Home
             </Link>
           </div>
@@ -53,12 +53,12 @@ const Header = () => {
       {!logged && (
         <div class="row">
           <div class="col-sm-6">
-            <Link class="btn btn-dark" to="/registro">
+            <Link class="btn btn-dark rounded-pill" to="/registro">
               Registrarse
             </Link>
           </div>
           <div class="col-sm-6">
-            <Link class="btn btn-dark" to="/login">
+            <Link class="btn btn-dark rounded-pill" to="/login">
               Login
             </Link>
           </div>

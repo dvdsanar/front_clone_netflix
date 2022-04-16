@@ -105,7 +105,7 @@ const AlquilarPelicula = () => {
             <input
               type="submit"
               value="Alquilar pelicula"
-              class="col-lg-1 btn btn-dark"
+              class="col-lg-1 btn btn-dark rounded-pill"
             />
           </div>
         </form>

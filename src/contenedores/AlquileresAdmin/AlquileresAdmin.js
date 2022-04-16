@@ -50,7 +50,7 @@ const AlquileresAdmin = () => {
       <h3>Datos de los alquileres</h3>
       {alquileres.map((alquiler) => {
         return (
-          <div class="col-sm-4 border p-1 mt-1">
+          <div class="col-sm-4 border border-warning rounded-pill p-1 mt-1">
             <h4>{alquiler.idPelicula.titulo}</h4>
             <div class="row">
               <span class="col-sm fw-bold">Película</span>
@@ -72,14 +72,14 @@ const AlquileresAdmin = () => {
             <div class="row d-flex justify-content-center">
               <button
                 type="button"
-                class="btn btn-secondary btn-sm col-sm-4 text-center me-1"
+                class="btn btn-secondary btn-sm col-sm-4 text-center me-1 rounded-pill"
                 onClick={() => navegar("/modificarAlquiler/" + alquiler._id)}
               >
                 Modificar Alquiler
               </button>
               <button
                 type="button"
-                class="btn btn-secondary btn-sm col-sm-4 text-center me-1"
+                class="btn btn-secondary btn-sm col-sm-4 text-center me-1 rounded-pill"
                 onClick={() => cancelarAlquiler(alquiler._id)}
               >
                 Cancelar Alquiler

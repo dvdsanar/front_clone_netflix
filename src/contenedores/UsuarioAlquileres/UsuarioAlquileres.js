@@ -63,7 +63,7 @@ const UsuarioAlquileres = () => {
       <h3>Películas Alquiladas</h3>
       {alquileres.map((Alquiler) => {
         return (
-          <div class="col-sm-4 border p-1 mt-1">
+          <div class="col-sm-4 border border-warning rounded-pill p-1 mt-1">
             <h4>{Alquiler.idPelicula.titulo}</h4>
             <div class="row">
               <span class="col-sm fw-bold">Fecha de alquiler:</span>
@@ -93,7 +93,7 @@ const UsuarioAlquileres = () => {
             <div class="row d-flex justify-content-center">
               <button
                 type="button"
-                class="btn btn-secondary btn-sm col-sm-4 text-center me-1"
+                class="btn btn-secondary btn-sm col-sm-4 text-center me-1 rounded-pill"
                 onClick={() => navegar("/modificarAlquiler/" + Alquiler._id)}
               >
                 Modificar datos de Alquiler
@@ -101,7 +101,7 @@ const UsuarioAlquileres = () => {
 
               <button
                 type="button"
-                class="btn btn-secondary btn-sm col-sm-4 text-center me-1"
+                class="btn btn-secondary btn-sm col-sm-4 text-center me-1 rounded-pill"
                 onClick={() => borrarAlquiler(Alquiler._id)}
               >
                 Cancelar Alquiler

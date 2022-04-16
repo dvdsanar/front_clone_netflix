@@ -78,7 +78,7 @@ const Registro = () => {
           </div>
           <div class="row justify-content-center mt-4 mb-1">
             <input
-              class="col-lg-1 btn btn-dark"
+              class="col-lg-1 btn btn-dark rounded-pill"
               type="submit"
               value="Registrarse"
             />

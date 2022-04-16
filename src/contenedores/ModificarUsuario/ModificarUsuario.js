@@ -102,7 +102,11 @@ const ModificarUsuario = () => {
             />
           </div>
           <div class="row justify-content-center mt-4 mb-1">
-            <input type="submit" value="SEND" class="col-lg-3 btn btn-dark" />
+            <input
+              type="submit"
+              value="Modificar"
+              class="col-lg-3 btn btn-dark rounded-pill"
+            />
           </div>
         </form>
       </div>

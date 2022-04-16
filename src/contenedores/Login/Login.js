@@ -79,7 +79,11 @@ const Login = () => {
             />
           </div>
           <div class="row justify-content-center mt-4 mb-1">
-            <input type="submit" value="Entrar" class="col-lg-1 btn btn-dark" />
+            <input
+              type="submit"
+              value="Entrar"
+              class="col-lg-1 btn btn-dark rounded-pill"
+            />
           </div>
         </form>
       </div>

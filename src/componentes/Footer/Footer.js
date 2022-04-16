@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <footer>
       <div class="row">
-        <div class="col-lg">
+        <div class="col-lg ">
           <a
-            class="btn btn-dark"
+            class="btn btn-dark rounded-pill"
             href="https://github.com/dvdsanar"
             target="_blank"
           >
