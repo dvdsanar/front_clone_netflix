@@ -65,7 +65,7 @@ const ModificarAlquiler = () => {
   return (
     <div
       class="d-flex align-items-center justify-content-center"
-      className="contenedor"
+      className="fondo contenedor"
     >
       <div class="col-lg-12">
         <h1 class="mb-5">Modifica los datos de tu alquiler</h1>

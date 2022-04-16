@@ -42,7 +42,7 @@ const Registro = () => {
   return (
     <div
       class="d-flex align-items-center justify-content-center"
-      className="contenedor"
+      className="fondo contenedor"
     >
       <div class="col-lg-12">
         <h2 class="mb-5">REGISTRO DE USUARIO</h2>

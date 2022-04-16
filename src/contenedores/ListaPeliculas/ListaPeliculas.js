@@ -29,7 +29,7 @@ const ListaPeliculas = () => {
   }, []);
 
   return (
-    <div className="alquileresCardAll">
+    <div className="fondo contenedor">
       {peliculas.map((pelicula) => {
         return (
           <div className="infoalquileresAll">
