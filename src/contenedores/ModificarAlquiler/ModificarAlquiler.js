@@ -63,29 +63,42 @@ const ModificarAlquiler = () => {
     }
   };
   return (
-    <div className="modificaralquiler">
-      <h1 className="h1ModificarUsuario">Modifica los datos de tu alquiler</h1>
-      <form onSubmit={(e) => formSubmit(e)} className="formModificaralquiler">
-        <label htmlFor="fecha_alquiler">
-          Introduzca la fecha de inicio del alquiler
-        </label>
-        <input
-          type="text"
-          id="fecha_alquiler"
-          name="fecha_alquiler"
-          defaultValue={alquiler.fecha_alquiler}
-        />
-        <label htmlFor="fecha_devolucion">
-          Introduzca la fecha de devolucion del alquiler
-        </label>
-        <input
-          type="text"
-          id="fecha_devolucion"
-          name="fecha_devolucion"
-          defaultValue={alquiler.fecha_devolucion}
-        />
-        <input type="submit" value="SEND" className="sendButton" />
-      </form>
+    <div
+      class="d-flex align-items-center justify-content-center"
+      className="contenedor"
+    >
+      <div class="col-lg-12">
+        <h1 class="mb-5">Modifica los datos de tu alquiler</h1>
+        <form onSubmit={(e) => formSubmit(e)} className="formModificaralquiler">
+          <div class="row justify-content-center mt-2">
+            <label class="col-lg-2 text-start" htmlFor="fecha_alquiler">
+              Introduzca la fecha de inicio del alquiler
+            </label>
+            <input
+              class="col-lg-2 text-center"
+              type="text"
+              id="fecha_alquiler"
+              name="fecha_alquiler"
+              defaultValue={alquiler.fecha_alquiler}
+            />
+          </div>
+          <div class="row justify-content-center mt-2">
+            <label class="col-lg-2 text-start" htmlFor="fecha_devolucion">
+              Introduzca la fecha de devolucion del alquiler
+            </label>
+            <input
+              class="col-lg-2 text-center"
+              type="text"
+              id="fecha_devolucion"
+              name="fecha_devolucion"
+              defaultValue={alquiler.fecha_devolucion}
+            />
+          </div>
+          <div class="row justify-content-center mt-4 mb-1">
+            <input type="submit" value="SEND" class="col-lg-1 btn btn-dark" />
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
