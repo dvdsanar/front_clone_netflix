@@ -33,6 +33,9 @@ const Header = () => {
             </a>
           </div>
           <div className="enlaces">
+            <Link to="/listapeliculas">Películas</Link>
+          </div>
+          <div className="enlaces">
             <Link to="/areaCliente">Perfil</Link>
           </div>
           <div className="enlaces">
