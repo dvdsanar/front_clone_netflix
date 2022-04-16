@@ -60,43 +60,56 @@ const AlquilarPelicula = () => {
     }
   };
   return (
-    <div className="crearCita">
-      <h2 className="h2citaMascota">Cita para mascota</h2>
-      <form onSubmit={(e) => formSubmit(e)} className="formCrearCita">
-        <label className="labelCrearCita" htmlFor="fecha_alquiler">
-          Fecha desde la que deseas alquilar la película
-        </label>
-        <input
-          className="inputCrearCita"
-          type="datetime"
-          id="fecha_alquiler"
-          name="fecha_alquiler"
-          placeholder="aaaa-mm-dd"
-        />
-        <label className="labelCrearCita" htmlFor="fecha_devolucion">
-          Fecha en la que deseas devolver la película
-        </label>
-        <input
-          className="fecha"
-          type="datetime"
-          id="fecha_devolucion"
-          name="fecha_devolucion"
-          placeholder="aaaa-mm-dd"
-        />
-        <label className="labelCrearCita" htmlFor="seleccionar">
-          Selecciona la Película que deseas alquilar
-        </label>
-        <select className="selectpeliculas">
-          {peliculas.map((pelicula) => (
-            <option value={pelicula._id}>{pelicula.titulo}</option>
-          ))}
-        </select>
-        <input
-          type="submit"
-          value="Alquilar pelicula"
-          className="botonCrearCita"
-        />
-      </form>
+    <div
+      class="d-flex align-items-center justify-content-center"
+      className="contenedor"
+    >
+      <div class="col-lg-12">
+        <h2 class="mb-5">Alquilar Película</h2>
+        <form onSubmit={(e) => formSubmit(e)} className="formCrearCita">
+          <div class="row justify-content-center mt-2">
+            <label class="col-lg-2 text-start" htmlFor="fecha_alquiler">
+              Fecha desde la que deseas alquilar la película
+            </label>
+            <input
+              class="col-lg-2"
+              type="datetime"
+              id="fecha_alquiler"
+              name="fecha_alquiler"
+              placeholder="aaaa-mm-dd"
+            />
+          </div>
+          <div class="row justify-content-center mt-2">
+            <label class="col-lg-2 text-start" htmlFor="fecha_devolucion">
+              Fecha en la que deseas devolver la película
+            </label>
+            <input
+              class="col-lg-2"
+              type="datetime"
+              id="fecha_devolucion"
+              name="fecha_devolucion"
+              placeholder="aaaa-mm-dd"
+            />
+          </div>
+          <div class="row justify-content-center mt-2">
+            <label class="col-lg-2 text-start" htmlFor="seleccionar">
+              Selecciona la Película que deseas alquilar
+            </label>
+            <select class="col-lg-2">
+              {peliculas.map((pelicula) => (
+                <option value={pelicula._id}>{pelicula.titulo}</option>
+              ))}
+            </select>
+          </div>
+          <div class="row justify-content-center mt-4 mb-1">
+            <input
+              type="submit"
+              value="Alquilar pelicula"
+              class="col-lg-1 btn btn-dark"
+            />
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
