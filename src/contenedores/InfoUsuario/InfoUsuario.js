@@ -28,13 +28,19 @@ const InfoUsuario = () => {
     <div>
       {usuarios.map((usuario) => {
         return (
-          <div className="usuariosCard">
-            <p>Nombre: {usuario.nombre}</p>
-            <p>Email: {usuario.email}</p>
-            <div className="botonesOpciones">
+          <div class="container border p-1 ">
+            <div class="row justify-content-center">
+              <p class="col-lg-1 fw-bold">Nombre: </p>
+              <p class="col-lg-1">{usuario.nombre}</p>
+            </div>
+            <div class="row justify-content-center">
+              <p class="col-lg-1 fw-bold">Email: </p>
+              <p class="col-lg-1">{usuario.email}</p>
+            </div>
+            <div class="row d-flex justify-content-center m-0">
               <button
                 type="button"
-                className="botonOpcionesUsuario"
+                class="btn btn-secondary btn-sm col-sm-2 text-center me-1"
                 onClick={() => navegar("/modificarUsuario/" + usuario._id)}
               >
                 Modificar datos
@@ -42,7 +48,7 @@ const InfoUsuario = () => {
 
               <button
                 type="button"
-                className="botonOpcionesUsuario"
+                class="btn btn-secondary btn-sm col-sm-2 text-center ms-1"
                 onClick={() => navegar("/alquilarPelicula")}
               >
                 Alquilar una película

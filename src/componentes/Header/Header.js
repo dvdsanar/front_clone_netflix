@@ -21,9 +21,10 @@ const Header = () => {
   return (
     <header>
       {logged && (
-        <div>
-          <div className="enlaces">
+        <div class="row">
+          <div class="col-md">
             <a
+              class="btn btn-dark"
               onClick={() => {
                 dispatch(actionCreator(USER_LOGOUT));
                 navegar("/login");
@@ -32,24 +33,34 @@ const Header = () => {
               Logout
             </a>
           </div>
-          <div className="enlaces">
-            <Link to="/listapeliculas">Películas</Link>
+          <div class="col-md">
+            <Link class="btn btn-dark" to="/listapeliculas">
+              Películas
+            </Link>
           </div>
-          <div className="enlaces">
-            <Link to="/areaCliente">Perfil</Link>
+          <div class="col-md">
+            <Link class="btn btn-dark" to="/areaCliente">
+              Perfil
+            </Link>
           </div>
-          <div className="enlaces">
-            <Link to="/">Home</Link>
+          <div class="col-md">
+            <Link class="btn btn-dark" to="/">
+              Home
+            </Link>
           </div>
         </div>
       )}
       {!logged && (
-        <div>
-          <div className="enlaces">
-            <Link to="/registro">Registrarse</Link>
+        <div class="row">
+          <div class="col-sm-6">
+            <Link class="btn btn-dark" to="/registro">
+              Registrarse
+            </Link>
           </div>
-          <div className="enlaces">
-            <Link to="/login">Login</Link>
+          <div class="col-sm-6">
+            <Link class="btn btn-dark" to="/login">
+              Login
+            </Link>
           </div>
         </div>
       )}

@@ -59,31 +59,41 @@ const UsuarioAlquileres = () => {
   };
 
   return (
-    <div className="alquileresCard">
+    <div class="row p-1 mt-1 ">
+      <h3>Películas Alquiladas</h3>
       {alquileres.map((Alquiler) => {
         return (
-          <div className="infoalquileres">
-            <h3>Datos del alquiler de {Alquiler.idPelicula.titulo}</h3>
-            <tr>
-              <th>Película alquilada</th>
-              <td>{Alquiler.idPelicula.titulo}</td>
-              <th>Fecha de alquiler</th>
-              <td>{Alquiler.fecha_alquiler}</td>
-              <th>Fecha de devolución</th>
-              <td>{Alquiler.fecha_devolucion}</td>
-              <th>Año de estreno</th>
-              <td>{Alquiler.idPelicula.año}</td>
-              <th>Género</th>
-              <td>{Alquiler.idPelicula.genero}</td>
-              <th>Actores</th>
-              <td>{Alquiler.idPelicula.actores}</td>
-              <th>Duración</th>
-              <td>{Alquiler.idPelicula.duracion}</td>
-            </tr>
-            <div className="botonesOpciones">
+          <div class="col-sm-4 border p-1 mt-1">
+            <h4>{Alquiler.idPelicula.titulo}</h4>
+            <div class="row">
+              <span class="col-sm fw-bold">Fecha de alquiler:</span>
+              <span class="col-sm">{Alquiler.fecha_alquiler}</span>
+            </div>
+            <div class="row">
+              <span class="col-sm fw-bold">Fecha de devolución:</span>
+              <span class="col-sm">{Alquiler.fecha_devolucion}</span>
+            </div>
+            <div class="row">
+              <span class="col-sm fw-bold">Año de estreno:</span>
+              <span class="col-sm">{Alquiler.idPelicula.año}</span>
+            </div>
+            <div class="row">
+              <span class="col-sm fw-bold">Género:</span>
+              <span class="col-sm">{Alquiler.idPelicula.genero}</span>
+            </div>
+            <div class="row">
+              <span class="col-sm fw-bold">Actores:</span>
+              <span class="col-sm">{Alquiler.idPelicula.actores}</span>
+            </div>
+            <div class="row">
+              <span class="col-sm fw-bold">Duración:</span>
+              <span class="col-sm">{Alquiler.idPelicula.duracion}</span>
+            </div>
+
+            <div class="row d-flex justify-content-center">
               <button
                 type="button"
-                className="botonOpcionesalquileres"
+                class="btn btn-secondary btn-sm col-sm-4 text-center me-1"
                 onClick={() => navegar("/modificarAlquiler/" + Alquiler._id)}
               >
                 Modificar datos de Alquiler
@@ -91,7 +101,7 @@ const UsuarioAlquileres = () => {
 
               <button
                 type="button"
-                className="botonOpcionesalquileres"
+                class="btn btn-secondary btn-sm col-sm-4 text-center me-1"
                 onClick={() => borrarAlquiler(Alquiler._id)}
               >
                 Cancelar Alquiler

@@ -6,6 +6,7 @@ footer {
   font-family: "Courier New", Courier, monospace;
   background-color: black;
   border-top: 2px solid white;
+  align-items: center;
 }
 .enlacesFooter {
   font-size: 25px;

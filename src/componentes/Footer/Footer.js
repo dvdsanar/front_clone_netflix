@@ -3,10 +3,16 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer>
-      <div className="enlacesFooter">
-        <a href="https://github.com/dvdsanar" target="_blank">
-          David
-        </a>
+      <div class="row">
+        <div class="col-lg">
+          <a
+            class="btn btn-dark"
+            href="https://github.com/dvdsanar"
+            target="_blank"
+          >
+            David
+          </a>
+        </div>
       </div>
     </footer>
   );

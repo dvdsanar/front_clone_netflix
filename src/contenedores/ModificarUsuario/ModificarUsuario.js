@@ -58,40 +58,48 @@ const ModificarUsuario = () => {
     }
   };
   return (
-    <div className="modificarUsuario">
-      <h1 className="h1ModificarUsuario">Modifica tus datos</h1>
-      <form onSubmit={(e) => formSubmit(e)} className="formpatchUsuarios">
-        <label htmlFor="nombre" className="labelModificar">
-          Modifica tu nombre {usuarios.nombre}
-        </label>
-        <input
-          className="inputModificarUsuario"
-          type="text"
-          id="nombre"
-          name="nombre"
-          defaultValue={usuarios.nombre}
-        />
-        <label htmlFor="email" className="labelModificar">
-          Modifica tu correo electronico
-        </label>
-        <input
-          className="inputModificarUsuario"
-          type="email"
-          id="email"
-          name="email"
-          defaultValue={usuarios.email}
-        />
-        <label htmlFor="password" className="labelModificar">
-          Modifica tu contraseña
-        </label>
-        <input
-          className="inputModificarUsuario"
-          type="password"
-          id="password"
-          name="password"
-          defaultValue={usuarios.password}
-        />
-        <input type="submit" value="SEND" className="botonModificarUsuario" />
+    <div class="container " className="container">
+      <h1 class="row justify-content-center mt-2">Modifica tus datos</h1>
+      <form onSubmit={(e) => formSubmit(e)} class="align-middle">
+        <div class="row justify-content-center mt-2">
+          <label htmlFor="nombre" class="col-lg-3">
+            Modifica tu nombre:
+          </label>
+          <input
+            class="col-lg-3"
+            type="text"
+            id="nombre"
+            name="nombre"
+            defaultValue={usuarios.nombre}
+          />
+        </div>
+        <div class="row justify-content-center mt-2">
+          <label htmlFor="email" class="col-lg-3">
+            Modifica tu correo electronico:
+          </label>
+          <input
+            class="col-lg-3"
+            type="email"
+            id="email"
+            name="email"
+            defaultValue={usuarios.email}
+          />
+        </div>
+        <div class="row justify-content-center mt-2">
+          <label htmlFor="password" class="col-lg-3">
+            Modifica tu contraseña:
+          </label>
+          <input
+            class="col-lg-3"
+            type="password"
+            id="password"
+            name="password"
+            defaultValue={usuarios.password}
+          />
+        </div>
+        <div class="row justify-content-center mt-2 mb-1">
+          <input type="submit" value="SEND" class="col-lg-3 btn btn-dark" />
+        </div>
       </form>
     </div>
   );
