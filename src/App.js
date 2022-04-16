@@ -12,6 +12,7 @@ import ModificarAlquiler from "./contenedores/ModificarAlquiler/ModificarAlquile
 import AlquilarPelicula from "./contenedores/AlquilarPelicula/AlquilarPelicula";
 import ModificarUsuario from "./contenedores/ModificarUsuario/ModificarUsuario";
 import AlquileresAdmin from "./contenedores/AlquileresAdmin/AlquileresAdmin";
+import ListaPeliculas from "./contenedores/ListaPeliculas/ListaPeliculas";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             element={<ModificarUsuario />}
           ></Route>
           <Route path="/alquileresadmin" element={<AlquileresAdmin />}></Route>
+          <Route path="/listapeliculas" element={<ListaPeliculas />}></Route>
         </Routes>
         <PopUp />
         <Footer />
