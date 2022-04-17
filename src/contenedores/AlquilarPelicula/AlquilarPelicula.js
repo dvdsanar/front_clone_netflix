@@ -50,7 +50,6 @@ const AlquilarPelicula = () => {
       );
 
       if (postPelicula) {
-        console.log(formData);
         dispatch(actionCreator(VER_POPUP, "Has alquilado una película "));
         setTimeout(() => dispatch(actionCreator(CERRAR_POPUP)), 3000);
         navegar("/areaCliente");
