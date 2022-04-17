@@ -57,7 +57,7 @@ const Login = () => {
     <div class="d-flex align-items-center justify-content-center fondo contenedor">
       <div class="col-lg-12">
         <h2 class="mb-5">LOGIN DE USUARIO</h2>
-        <form onSubmit={(e) => formSubmit(e)} className="formUsuario">
+        <form onSubmit={(e) => formSubmit(e)}>
           <div class="row justify-content-center mt-2">
             <label class="col-lg-1 text-start" htmlFor="email">
               Email:

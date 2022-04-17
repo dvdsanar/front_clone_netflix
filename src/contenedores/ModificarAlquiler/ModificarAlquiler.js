@@ -66,7 +66,7 @@ const ModificarAlquiler = () => {
     <div class="d-flex align-items-center justify-content-center fondo contenedor">
       <div class="col-lg-12">
         <h1 class="mb-5">Modifica los datos de tu alquiler</h1>
-        <form onSubmit={(e) => formSubmit(e)} className="formModificaralquiler">
+        <form onSubmit={(e) => formSubmit(e)}>
           <div class="row justify-content-center mt-2">
             <label class="col-lg-3 text-start" htmlFor="fecha_alquiler">
               Introduzca la fecha de inicio del alquiler

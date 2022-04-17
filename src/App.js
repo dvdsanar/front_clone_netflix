@@ -16,7 +16,7 @@ import ListaPeliculas from "./contenedores/ListaPeliculas/ListaPeliculas";
 
 function App() {
   return (
-    <div className="App">
+    <div class="App">
       <BrowserRouter>
         <Header />
         <PopUp />

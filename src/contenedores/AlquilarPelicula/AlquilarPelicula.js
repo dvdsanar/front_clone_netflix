@@ -60,13 +60,10 @@ const AlquilarPelicula = () => {
     }
   };
   return (
-    <div
-      class="d-flex align-items-center justify-content-center"
-      className="fondo contenedor"
-    >
+    <div class="d-flex align-items-center justify-content-center fondo contenedor">
       <div class="col-lg-12">
         <h2 class="mb-5">Alquilar Película</h2>
-        <form onSubmit={(e) => formSubmit(e)} className="formCrearCita">
+        <form onSubmit={(e) => formSubmit(e)}>
           <div class="row justify-content-center mt-2">
             <label class="col-lg-3 text-start" htmlFor="fecha_alquiler">
               Fecha desde la que deseas alquilar la película

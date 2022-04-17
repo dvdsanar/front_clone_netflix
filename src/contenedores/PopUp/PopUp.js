@@ -8,7 +8,7 @@ const PopUp = () => {
   return (
     <div>
       {popupState.visibilidad && (
-        <div className="popup">
+        <div class="popup">
           <p>{popupState.texto}</p>
         </div>
       )}

@@ -43,7 +43,7 @@ const Registro = () => {
     <div class="d-flex align-items-center justify-content-center fondo contenedor">
       <div class="col-lg-12">
         <h2 class="mb-5">REGISTRO DE USUARIO</h2>
-        <form onSubmit={(e) => formSubmit(e)} className="formCrearUsuario">
+        <form onSubmit={(e) => formSubmit(e)}>
           <div class="row justify-content-center mt-2">
             <label class="col-lg-2 text-start" htmlFor="nombre">
               Nombre:
