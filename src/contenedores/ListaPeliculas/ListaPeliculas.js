@@ -29,32 +29,39 @@ const ListaPeliculas = () => {
   }, []);
 
   return (
-    <div className="fondo contenedor">
+    <div class="row p-1 mt-1 " className="fondo contenedor">
+      <h3>Datos de las películas</h3>
       {peliculas.map((pelicula) => {
         return (
-          <div className="infoalquileresAll">
-            <h3>Datos de las películas</h3>
-            <tr>
-              <th>Película: </th>
-              <td>{pelicula.titulo}</td>
-              <th>Año de estreno: </th>
-              <td>{pelicula.año}</td>
-              <th>Género: </th>
-              <td>{pelicula.genero}</td>
-              <th>Actores: </th>
-              <td>{pelicula.actores}</td>
-              <th>Duracion (min.): </th>
-              <td>{pelicula.duracion}</td>
-              <th>Cartel: </th>
-              <td>
-                <img
-                  src={pelicula.imagen}
-                  alt="Girl in a jacket"
-                  width="500"
-                  height="600"
-                />
-              </td>
-            </tr>
+          <div class="col-sm-4 border border-warning rounded-pill p-1 mt-1">
+            <div class="row">
+              <span class="col-sm fw-bold">Película:</span>
+              <span class="col-sm">{pelicula.titulo}</span>
+            </div>
+            <div class="row">
+              <span class="col-sm fw-bold">Año de estreno:</span>
+              <span class="col-sm">{pelicula.año}</span>
+            </div>
+            <div class="row">
+              <span class="col-sm fw-bold">Género:</span>
+              <span class="col-sm">{pelicula.genero}</span>
+            </div>
+            <div class="row">
+              <span class="col-sm fw-bold">Actores:</span>
+              <span class="col-sm">{pelicula.actores}</span>
+            </div>
+            <div class="row">
+              <span class="col-sm fw-bold">Duracion (min.):</span>
+              <span class="col-sm">{pelicula.duracion}</span>
+            </div>
+            <div>
+              <img
+                src={pelicula.imagen}
+                alt="Cartel de la película {pelicula.titulo}"
+                width="250"
+                height="300"
+              />
+            </div>
           </div>
         );
       })}
