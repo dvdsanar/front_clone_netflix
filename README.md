@@ -8,7 +8,7 @@
 
 Para poder utilizar nuestra app debe seguir estos pasos:
 
-- Hacer click en: [Pulse aqui! 🐾](https://desarrollo.droyy9h2p31qv.amplifyapp.com/) para empezar el recorrido
+- Hacer click en: [Pulse aqui! 📼](https://master.datx81rg11e11.amplifyapp.com/) para empezar el recorrido
 - Una vez dentro podemos ver la vista de **home**, que cuenta con el logo inicial y una cabecera con dos botones en la parte derecha.
 - Al hacer click en botón de **registrar** te redirigirá a una nueva vista donde te pedirán unos datos básicos para registrarte en el sistema.
 - Una vez registrado serás redirigido a la vista de **login**, donde debes introducir el email y contraseña que habías puesto en el registro.
