@@ -4,7 +4,6 @@ header {
   justify-content: flex-end;
   height: 5em;
   font-family: "Courier New", Courier, monospace;
-  border-bottom: 2px solid white;
   background: linear-gradient(to bottom, blue, rgb(217, 2, 250));
   align-items: center;
 }

@@ -46,11 +46,11 @@ const AlquileresAdmin = () => {
     }
   };
   return (
-    <div class="row p-1 mt-1 " className="fondo contenedor">
+    <div class="row d-flex fondo contenedor">
       <h3>Datos de los alquileres</h3>
       {alquileres.map((alquiler) => {
         return (
-          <div class="col-sm-4 border border-warning rounded-pill p-1 mt-1">
+          <div class="col-sm-4 border border-warning rounded-pill p-1 mt-1 ">
             <h4>{alquiler.idPelicula.titulo}</h4>
             <div class="row">
               <span class="col-sm fw-bold">Película</span>

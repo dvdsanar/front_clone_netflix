@@ -54,10 +54,7 @@ const Login = () => {
   };
 
   return (
-    <div
-      class="d-flex align-items-center justify-content-center"
-      className="fondo contenedor"
-    >
+    <div class="d-flex align-items-center justify-content-center fondo contenedor">
       <div class="col-lg-12">
         <h2 class="mb-5">LOGIN DE USUARIO</h2>
         <form onSubmit={(e) => formSubmit(e)} className="formUsuario">

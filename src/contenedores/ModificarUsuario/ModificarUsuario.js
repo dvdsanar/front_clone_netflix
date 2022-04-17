@@ -58,10 +58,7 @@ const ModificarUsuario = () => {
     }
   };
   return (
-    <div
-      class="d-flex align-items-center justify-content-center "
-      className="fondo contenedor"
-    >
+    <div class="d-flex align-items-center justify-content-center fondo contenedor ">
       <div class="col-lg-12">
         <h1 class="row justify-content-center mb-5">Modifica tus datos</h1>
         <form onSubmit={(e) => formSubmit(e)} class="align-middle">
