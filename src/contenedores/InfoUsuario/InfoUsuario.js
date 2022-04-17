@@ -28,31 +28,33 @@ const InfoUsuario = () => {
     <div>
       {usuarios.map((usuario) => {
         return (
-          <div class="container border border-warning rounded-pill p-1 ">
-            <div class="row justify-content-center">
-              <p class="col-lg-1 fw-bold">Nombre: </p>
-              <p class="col-lg-1">{usuario.nombre}</p>
-            </div>
-            <div class="row justify-content-center">
-              <p class="col-lg-1 fw-bold">Email: </p>
-              <p class="col-lg-1">{usuario.email}</p>
-            </div>
-            <div class="row d-flex justify-content-center m-0">
-              <button
-                type="button"
-                class="btn btn-secondary btn-sm col-sm-2 text-center me-1 rounded-pill"
-                onClick={() => navegar("/modificarUsuario/" + usuario._id)}
-              >
-                Modificar datos
-              </button>
+          <div class="row d-flex justify-content-center">
+            <div class="col-auto border border-warning rounded-pill ps-5 pe-5 pt-1 pb-1">
+              <div class="d-flex justify-content-left">
+                <p class="fw-bold me-2">Nombre: </p>
+                <p> {usuario.nombre}</p>
+              </div>
+              <div class="d-flex justify-content-left">
+                <p class="fw-bold me-2">Email: </p>
+                <p> {usuario.email}</p>
+              </div>
+              <div class="d-flex justify-content-center m-0">
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-sm text-center me-1 rounded-pill"
+                  onClick={() => navegar("/modificarUsuario/" + usuario._id)}
+                >
+                  Modificar datos
+                </button>
 
-              <button
-                type="button"
-                class="btn btn-secondary btn-sm col-sm-2 text-center ms-1 rounded-pill"
-                onClick={() => navegar("/alquilarPelicula")}
-              >
-                Alquilar una película
-              </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-sm  text-center ms-1 rounded-pill"
+                  onClick={() => navegar("/alquilarPelicula")}
+                >
+                  Alquilar una película
+                </button>
+              </div>
             </div>
           </div>
         );
@@ -62,3 +64,5 @@ const InfoUsuario = () => {
 };
 
 export default InfoUsuario;
+
+//
