@@ -1,5 +1,7 @@
 .home-contenedor {
   background-image: url("https://www.cultture.com/pics/2018/04/maxresdefault_1.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
   width: 100vw;
   margin: 0;
 }
