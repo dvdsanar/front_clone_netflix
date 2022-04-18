@@ -1,6 +1,6 @@
 .home-contenedor {
   background: url("https://www.cultture.com/pics/2018/04/maxresdefault_1.jpg");
-  background-size: cover;
+  background-size: 100vw 100vh;
   background-repeat: no-repeat;
   width: 100vw;
   margin: 0;
